@@ -1,11 +1,10 @@
 import { Router } from 'express';
-import { welcomeHandler } from './handler';
+import { HomepageGetHandler, LandingGetHandler } from './handler';
 
 const router = Router();
+router.get('/', LandingGetHandler);
+router.get('/home', HomepageGetHandler);
 
-router.get('/', welcomeHandler);
-router.post('/', (req, res) => {
-    res.send('Hello, World!');
-});
+
 
 export default router;

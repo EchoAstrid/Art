@@ -7,7 +7,7 @@
     "lint": "eslint src/**/**/*.ts",
     "fix": "eslint src/**/***.ts --fix",
     "start": "tsx ./src/server.ts",
-    "local": "nodemon"
+    "local": "nodemon" 
   },
   "author": "",
   "license": "ISC",

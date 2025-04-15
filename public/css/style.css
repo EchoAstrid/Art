@@ -1,0 +1,105 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* Pale Lilac */
+    color: #dcdada;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+.landingimg{
+    height: 1500px;
+    width: 1700px;
+    
+   
+}
+/* Shop Now Button */
+.btn-primary {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff6f61; /* Sunset Glow */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d85d50;
+}
+
+/* Footer */
+.footer {
+    background-color: #945d04; /* Rose Quartz or Pale Lilac variation */
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #0004ff;
+}
+
+.welcome {
+    background-image: url('../views/image/landing1.jpg');
+    background-size: cover; /* Makes the image cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    height: 300px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.welcome h1{
+    color: red;
+    margin: 30px;
+}
+.box-blur{
+    background-color: #ffffff;
+    opacity: 0.8;
+    margin: 30px;
+    background: linear-gradient(to right, #8a2be2, #ffb400); /* Electric Violet to Golden Yellow */
+}
+
+#box-blur-text{
+    color: red;
+    text-align: center;
+}
+.br{
+    margin-bottom: 30px;
+}
+
+.box-blur img{
+    width: 190px;
+    height: 300px;
+    border-radius: 10%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    box-shadow: 10px 10px 0px 0px rgb(127, 113, 113);
+    }
