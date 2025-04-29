@@ -7,21 +7,20 @@
 }
 
 body {
-    background-color: #ffffff; /* Pale Lilac */
-    color: #dcdada;
+    background-color: #ffffff; /*pale lilac*/
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+
 /* Header Section */
 header {
     text-align: center;
     padding: 60px 20px;
-    
+    background: linear-gradient(to right, #8a2be2, #ffb400); /* Electric Violet to Golden Yellow */
     color: white;
 }
-
 header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
@@ -31,6 +30,7 @@ header p {
     font-size: 1.3rem;
     margin-bottom: 30px;
 }
+
 .landingimg{
     height: 1500px;
     width: 1700px;
@@ -47,15 +47,17 @@ header p {
     font-weight: bold;
     border-radius: 30px;
     transition: background-color 0.3s ease;
+
 }
 
 .btn-primary:hover {
     background-color: #d85d50;
+    
 }
 
 /* Footer */
 .footer {
-    background-color: #945d04; /* Rose Quartz or Pale Lilac variation */
+    background-color: linear-gradient(to right, #8a2be2, #ffb400); /* Electric Violet to Golden Yellow*/
     text-align: center;
     padding: 20px;
     margin-top: auto;
@@ -76,24 +78,27 @@ header p {
     border-radius: 30px;
 }
 .welcome h1{
-    color: red;
+    color: rgb(254, 13, 13);
     margin: 30px;
 }
+
 .box-blur{
     background-color: #ffffff;
     opacity: 0.8;
     margin: 30px;
-    background: linear-gradient(to right, #8a2be2, #ffb400); /* Electric Violet to Golden Yellow */
+    background: linear-gradient(to right, #8a2be2, #ffb400); /* Electric Violet to Golden Yellow*/
 }
 
 #box-blur-text{
     color: red;
     text-align: center;
 }
-.br{
-    margin-bottom: 30px;
-}
 
+.br {
+    text-align: center;
+    margin-top: 30px;
+ 
+}
 .box-blur img{
     width: 190px;
     height: 300px;
@@ -102,4 +107,4 @@ header p {
     margin-bottom: 30px;
     margin-top: 30px;
     box-shadow: 10px 10px 0px 0px rgb(127, 113, 113);
-    }
+}

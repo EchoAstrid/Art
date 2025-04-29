@@ -16,5 +16,5 @@ app.set('views', path.join(__dirname, '../public/views'));
 app.use(router);
 
 app.listen(port, () => {
-    console.log('Server is running on http://localhost:3001');
+    console.log('Server is running on http://localhost:3002');
 });

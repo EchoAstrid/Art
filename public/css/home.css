@@ -2,7 +2,7 @@
 header {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(to right, #8a2be2, #ffb400); /* Electric Violet to Golden Yellow */
+    background: #ffffff;
     color: white;
 }
 
@@ -26,7 +26,7 @@ header p {
     background-size: cover; /* Makes the image cover the entire div */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling */
-    height: 300px; /* Adjust the height as needed */
+    height: 500px; /* Adjust the height as needed */
     display: flex;
     align-items: center;
     justify-content: center;

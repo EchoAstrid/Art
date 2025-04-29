@@ -15,11 +15,24 @@
         <nav class="navbar">
         <ul class="nav-link">
             <li><a href="/">Home</a></li>
-            <li><a href="#pencils & Charcoal">Pencils & Charcoal</a></li>
-            <li><a href="#books">Books</a></li>
+            <li><a href="#pencils">Pencils</a></li>
+            <li><a href="#pen">pen</a></li>
+            <li><a href="#Paper">Paper</a></li>
+            <li><a href="/paint">Canvas</a></li>
+            <li><a href="/paint">Paint</a></li>
         </ul>
         </nav>
-    
+
+        
+        <div class="box-blur">
+    <% products.forEach(products => { %>
+        <div id="box-blur-text">  
+            </div>
+            <img src="../views/image/<%= products.img %>">
+            <h1><%= products.name %></h1>
+           <% }) %>
+        </div>
+     
     </body>
 </html>
 
