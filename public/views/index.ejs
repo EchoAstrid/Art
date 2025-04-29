@@ -1,38 +1,38 @@
 <html>
     <head>
-        <title>home</title>
+        <title>landing</title>
         <%- include('partials/header') -%>
     </head>
-    <body>
-       <header>
-        <div class="navimg"  >
-            <nav class="box-Text">NOVE
-            <img src="../views/image/landing.jpg">
-            </nav>
-    </div>
-        </header>
-        
-        <nav class="navbar">
-        <ul class="nav-link">
-            <li><a href="/">Home</a></li>
-            <li><a href="#pencils">Pencils</a></li>
-            <li><a href="#pen">pen</a></li>
-            <li><a href="#Paper">Paper</a></li>
-            <li><a href="/paint">Canvas</a></li>
-            <li><a href="/paint">Paint</a></li>
-        </ul>
-        </nav>
 
-        
-        <div class="box-blur">
-    <% products.forEach(products => { %>
-        <div id="box-blur-text">  
-            </div>
-            <img src="../views/image/<%= products.img %>">
-            <h1><%= products.name %></h1>
-           <% }) %>
-        </div>
-     
-    </body>
+<body>
+  <header>
+      <div class="navimg">
+          <nav class="box-Text">NOVE</nav>
+          
+      </div>
+  </header>
+  <div class="welcome">
+      <h1>Welcome From NOVE</h1>
+      <div class="br">
+          <a href="/home" class="btn btn-primary">Shop Now</a>
+      </div>
+  </div>
+  <div class="box-blur">
+      <div id="box-blur-text">
+          Featured Products
+      </div>
+      <img src="../image/color pencils 1.jpg" alt="Color Pencils 1">
+      <img src="../image/color pencils 3.jpg" alt="Color Pencils 3">
+      <img src="../image/color pencils.jpg" alt="Color Pencils">
+      <img src="../image/painting brush.jpg" alt="Painting Brush">
+      <img src="../image/watercolor.jpg" alt="Watercolor 1">
+      <img src="../image/watercolor.jpg" alt="Watercolor 2">
+  </div>
+  <footer class="space"></footer>
+  <footer id="contact" class="footer">
+      <div class="footer-contact">
+          <p>&copy; 2025 NOVE Shop. All Rights Reserved.</p>
+      </div>
+  </footer>
+</body>
 </html>
-

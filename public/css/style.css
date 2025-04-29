@@ -1,4 +1,3 @@
-/* Reset and Base */
 * {
     margin: 0;
     padding: 0;
@@ -7,104 +6,219 @@
 }
 
 body {
-    background-color: #ffffff; /*pale lilac*/
+    background-color: #f8f0fb;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
-
 
 /* Header Section */
 header {
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #8a2be2, #ffb400); /* Electric Violet to Golden Yellow */
+    padding: 25px 0;
+    background: linear-gradient(to right, #9b59b6, #f1c40f);
     color: white;
-}
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header p {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
+header .navimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navimg img{
+    width: 30px;
+    height: 30px;
 }
 
-.landingimg{
-    height: 1500px;
-    width: 1700px;
-    
-   
+header nav {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+header img:hover {
+    transform: scale(1.02);
+}
+
 /* Shop Now Button */
 .btn-primary {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #ff6f61; /* Sunset Glow */
+    background-color: #ff7f50;
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 30px;
-    transition: background-color 0.3s ease;
-
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:hover {
-    background-color: #d85d50;
-    
+    background-color: #ff6b41;
+    transform: scale(1.06);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:active {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Welcome Section */
+.welcome {
+    background-image: url('../image/landing1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 3000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    border-radius: 15px;
+    max-width: 90%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.welcome h1 {
+    color: #e64a43;
+    font-size: 2.8rem;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.br {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Image Gallery Section */
+.box-blur {
+    background-color: #ffffff;
+    opacity: 0.95;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 95%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.box-blur img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box-blur img:hover {
+    transform: scale(1.1);
+    box-shadow: 12px 12px 18px rgba(0, 0, 0, 0.2);
+}
+
+.box-blur img:active {
+    transform: scale(1);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#box-blur-text {
+    color: #c0392b;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c0392b;
 }
 
 /* Footer */
 .footer {
-    background-color: linear-gradient(to right, #8a2be2, #ffb400); /* Electric Violet to Golden Yellow*/
+    background: linear-gradient(to right, #9b59b6, #f1c40f);
     text-align: center;
     padding: 20px;
     margin-top: auto;
     font-size: 0.9rem;
     color: #0004ff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.welcome {
-    background-image: url('../views/image/landing1.jpg');
-    background-size: cover; /* Makes the image cover the entire div */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    height: 300px; /* Adjust the height as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    border-radius: 30px;
-}
-.welcome h1{
-    color: rgb(254, 13, 13);
-    margin: 30px;
+.footer-contact {
+    margin-top: 15px;
+    font-weight: 600;
 }
 
-.box-blur{
-    background-color: #ffffff;
-    opacity: 0.8;
-    margin: 30px;
-    background: linear-gradient(to right, #8a2be2, #ffb400); /* Electric Violet to Golden Yellow*/
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+
+    header nav {
+        font-size: 1.6rem;
+    }
+
+    .welcome h1 {
+        font-size: 2.2rem;
+        padding: 12px 20px;
+    }
+
+    .box-blur img {
+        max-width: 100%;
+        margin: 15px 0;
+    }
+    .navimg {
+        flex-direction: column;
+    }
 }
 
-#box-blur-text{
-    color: red;
-    text-align: center;
-}
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
+    }
 
-.br {
-    text-align: center;
-    margin-top: 30px;
- 
-}
-.box-blur img{
-    width: 190px;
-    height: 300px;
-    border-radius: 10%;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    box-shadow: 10px 10px 0px 0px rgb(127, 113, 113);
+    header nav {
+        font-size: 1.3rem;
+    }
+
+    .welcome {
+        height: 250px;
+    }
+
+    .welcome h1 {
+        font-size: 1.8rem;
+        padding: 10px 15px;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
 }

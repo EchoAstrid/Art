@@ -6,13 +6,13 @@ import { getallproducts } from './Database/Dao/products';
 // };
 
 export const LandingGetHandler = (_: Request, res: Response) => {
-  res.render('landing');
+  res.render('index');
 };
 
 export const HomepageGetHandler = async (req: Request, res: Response) => {
  try {
   const products = await getallproducts();
-  res.render('index', {products});
+  res.render('home', {products});
  }
  catch(error) {
   console.error ('no products left', error);

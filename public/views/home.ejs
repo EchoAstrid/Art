@@ -1,0 +1,40 @@
+<head>
+    <title>home</title>
+    <%- include('partials/header') -%>
+</head>
+<body>
+   <header>
+    <div class="navimg"  >
+        <nav class="box-Text">NOVE
+        <img src="../image/landing.jpg">
+        </nav>
+</div>
+    </header>
+    
+    <nav class="navbar">
+    <ul class="nav-link">
+        <li><a href="/">Home</a></li>
+        <li><a href="#pencils">Pencils</a></li>
+        <li><a href="#pen">pen</a></li>
+        <li><a href="#Paper">Paper</a></li>
+        <li><a href="/paint">Canvas</a></li>
+        <li><a href="/paint">Paint</a></li>
+    </ul>
+    </nav>
+
+    
+
+    <div class="container">
+        <% products.forEach(products => { %>
+                <div>
+                    
+          <img src="../image/<%= products.img %>" alt=".">
+          <a  href="/food-details/<%= products.pro_name %>">
+          <h4><%= products.pro_name %></h4> 
+          
+      </a>
+        </div>
+        <% }) %>
+      
+</body>
+</html

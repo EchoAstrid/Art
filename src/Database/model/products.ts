@@ -2,10 +2,10 @@ import { RowDataPacket } from 'mysql2';
 
 export interface products extends RowDataPacket {
     Id: number;
-    name : string;
+    pro_name : string;
     img : string;
-    description : string;
-    price : number;
+    pro_description : string;
+   pro_price : number;
     cate_id: number;
     cate_name:string;
 
